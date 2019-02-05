@@ -13,8 +13,6 @@ export default function(state = initialState, action) {
         status: action.payload.status
       };
     default:
-      return {
-        ...state
-      };
+      return state;
   }
 }
